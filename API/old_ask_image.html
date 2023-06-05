@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>demo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        form {
+            margin-top: 10%;
+        }
+        form input {
+            margin-bottom: 5%;
+        }
+    </style>
+</head>
+<body>
+    <form action="get_image.php" method="post">
+        <h2>Input your type</h2>
+        <input type="text" placeholder="Please use English" name="search">
+        <br>
+        r18: <select name="r18" id="">
+            <option value="0" selected>false</option>
+            <option value="1">true</option>
+            <option value="2">mix</option>
+        </select>
+        <br>
+        num: <select name="num" id="">
+            <option value="1" selected>1</option>
+            <option value="2">2</option>
+            <option value="5">5</option>
+            <option value="10">10</option>
+            <option value="20">20</option>
+            <option value="30">30</option>
+            <option value="50">50</option>
+            <option value="100">100</option>
+        </select>
+        <br>
+        size: <select name="size" id="">
+            <option value="original">original</option>
+            <option value="regular">regular</option>
+            <option value="small" selected>small</option>
+            <option value="thumb">thumb</option>
+            <option value="mini">mini</option>
+        </select>
+        <br>
+        <h2>Display column</h2>
+        <h3>mobile screen will only have one column</h3>
+        column: <select name="column" id="">
+            <option value="1" selected>1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="20">20</option>
+        </select>
+        <br>
+        <button type="submit">get yellow image</button>
+    </form>
+</body>
+</html>
